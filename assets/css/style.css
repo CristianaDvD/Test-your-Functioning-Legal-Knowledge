@@ -1,0 +1,18 @@
+
+
+body {
+    background-image: url(../images/background-image.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+
+}
+
+#heading {
+    text-align: center;
+}
+#intro {
+    text-align: center;
+    padding: 10%;
+    border: ;
+}
