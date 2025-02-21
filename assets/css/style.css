@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 
 * {
   margin: 0;
@@ -21,7 +21,6 @@ body {
 #heading {
   margin-top: 20px;
   margin-bottom: 30px;
-  
 }
 .title {
   font-family: "Domine", serif;
@@ -43,12 +42,11 @@ body {
 .intro-title {
   font-family: "Domine", serif;
   margin: 5px;
-  color:#4c1e0f 
+  color: #4c1e0f;
 }
 
 .description {
   font-family: "Source Sans 3", sans-serif;
-  font-size: larger;
-  
+  text-align: left;
+  line-height: 1.8;
 }
-
