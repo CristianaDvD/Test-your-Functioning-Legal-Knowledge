@@ -26,9 +26,10 @@ body {
   font-family: "Domine", serif;
   color: #e9dfd0;
   /*code inspiration from https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow*/
-  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+  text-shadow: 1px 1px 2px black, 0 0 2em black, 0 0 0.2em black;
 }
-#intro-box {
+#intro-box,
+.test {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -56,7 +57,9 @@ body {
   color: #4c1e0f;
 }
 
-.start-btn {
+.start-btn,
+#next-btn {
+  font-family: "Domine", serif;
   background-color: #4c1e0f;
   border: #4c1e0f 1px solid;
   color: #e9dfd0;
@@ -69,7 +72,59 @@ body {
   transition-duration: 0.5s;
   cursor: pointer;
 }
-.start-btn:hover {
+.start-btn:hover,
+#next-btn:hover {
   background-color: #e9dfd0;
   color: #4c1e0f;
+}
+
+.test header {
+  font-family: "Domine", serif;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  color: #4c1e0f;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #4c1e0f;
+}
+.test h3 {
+  padding-top: 50px;
+}
+.scenario-container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.answer-btn {
+  font-family: "Source Sans 3", sans-serif;
+  color: #4c1e0f;
+  width: 100%;
+  border: 1px solid #4c1e0f;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0px;
+  text-align: left;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.answer-btn:hover {
+  background-color: #4c1e0f;
+  color: #e9dfd0;
+}
+#scenario {
+  font-family: "Source Sans 3", sans-serif;
+  text-align: left;
+}
+
+.test footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.current-score {
+  background: #e9dfd0;
+  border: 2px solid #4c1e0f;
+  margin: 10px;
+  padding: 10px;
+  width: max-content;
 }

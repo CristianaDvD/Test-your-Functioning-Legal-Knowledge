@@ -88,17 +88,21 @@
     <div class="test">
       <header>
         <div class="scenario-count">
-          <h2>
+          <h3>
             Scenario <span id="current-scenario">0</span>/<span
               id="total-scenarios"
               >10</span
             >
-          </h2>
+          </h3>
+        </div>
+        <div class="current-score">
+          <p class="scores">Correct <span id="correct-score">0</span></p>
+          <p class="scores">Incorrect <span id="incorrect-score">0</span></p>
         </div>
       </header>
       <section>
         <div class="scenario-container">
-          <h4 id="scenario">Scenario displayed here</h4>
+          <p id="scenario">Scenario displayed here</p>
           <div class="answers">
             <button class="answer-btn">Answer 1</button>
             <button class="answer-btn">Answer 2</button>
@@ -109,9 +113,8 @@
         </div>
       </section>
       <footer>
-        <div class="current-score">
-          <p class="scores">Correct <span id="correct-score">0</span></p>
-          <p class="scores">Incorrect <span id="incorrect-score">0</span></p>
+        <div class="next">
+          <button id="next-btn">Next</button>
         </div>
       </footer>
     </div>
