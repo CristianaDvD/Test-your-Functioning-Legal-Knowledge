@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -19,12 +21,15 @@ body {
 #heading {
   margin-top: 20px;
   margin-bottom: 30px;
+  
 }
 .title {
+  font-family: "Domine", serif;
   color: #e9dfd0;
+  /*code inspiration from https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow*/
   text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
 }
-  #intro-box {
+#intro-box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -35,3 +40,15 @@ body {
   transform: translate(-50%, -50%);
   background-color: #e9dfd0;
 }
+.intro-title {
+  font-family: "Domine", serif;
+  margin: 5px;
+  color:#4c1e0f 
+}
+
+.description {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: larger;
+  
+}
+
