@@ -35,6 +35,7 @@ body {
   margin-top: 20px;
   padding: 10px;
   border: 2px solid #4c1e0f;
+  border-radius: 6px;
   /*code inspiration from https://developer.mozilla.org/en-US/docs/Web/CSS/translate*/
   transform: translate(-50%, -50%);
   background-color: #e9dfd0;
@@ -49,4 +50,26 @@ body {
   font-family: "Source Sans 3", sans-serif;
   text-align: left;
   line-height: 1.8;
+}
+
+.description i {
+  color: #4c1e0f;
+}
+
+.start-btn {
+  background-color: #4c1e0f;
+  border: #4c1e0f 1px solid;
+  color: #e9dfd0;
+  margin: 10px;
+  text-align: center;
+  font-size: larger;
+  border-radius: 8px;
+  width: 150px;
+  padding: 10px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.start-btn:hover {
+  background-color: #e9dfd0;
+  color: #4c1e0f;
 }

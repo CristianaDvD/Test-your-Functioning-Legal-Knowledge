@@ -11,13 +11,11 @@
       name="keywords"
       content="legal, law, solicitor, business law, dispute, constitutional, administrative, England and Wales law"
     />
-    <!--FontAwsome link-->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    <!--Font awesome kit-->
+    <script
+      src="https://kit.fontawesome.com/4804c64e3a.js"
       crossorigin="anonymous"
-    />
+    ></script>
     <!--Favicon-->
     <link
       rel="apple-touch-icon"
@@ -55,21 +53,68 @@
       />
       <h1 class="title">Functioning Legal Knowledge</h1>
     </div>
-    <!--Description of the test destination-->
+    <!--Description of the test destination box-->
     <div id="intro-box">
       <h2 class="intro-title">Welcome!</h2>
       <p class="description">
         Test info: <br />
-        <i class="fa-solid fa-gavel"></i> This test, which follows an exam-like format, is meant for everyone who
-        is interested in the field of law as well as aspiring attorneys. <br><i class="fa-solid fa-gavel"></i> There
-        will be ten arbitrary scenarios, followed by a question each and a list
-        of possible answers, with only one correct option. <br><i class="fa-solid fa-gavel"></i> No timing present, to
-        avoid putting pressure on you, but as an indication, an average of 2
-        minutes per question is acceptable. Some questions will take more/less
-        time to answer than others. <br><i class="fa-solid fa-gavel"></i> Score will be visible at all times during the test. <br><i class="fa-solid fa-gavel"></i> Read the scenarios with attention and no rush. <br> Good luck and enjoy! 
+        <i class="fa-solid fa-scale-balanced"></i> This test, which follows an
+        exam-like format, is meant for everyone who is interested in the field
+        of law as well as aspiring attorneys. <br /><i
+          class="fa-solid fa-gavel"
+        ></i>
+        There will be ten arbitrary scenarios, followed by a question each and a
+        list of possible answers, with only one correct option. <br /><i
+          class="fa-solid fa-gavel"
+        ></i>
+        No timing present, to avoid putting pressure on you, but as an
+        indication, an average of 2 minutes per question is acceptable. Some
+        questions will take more/less time to answer than others. <br /><i
+          class="fa-solid fa-gavel"
+        ></i>
+        Score will be visible at all times during the test. <br /><i
+          class="fa-solid fa-gavel"
+        ></i>
+        Read the scenarios with attention and no rush. <br />
+        Good luck and enjoy!
       </p>
+      <!--start test btn-->
+      <div id="buttons">
+        <button class="start-btn">Start Test</button>
+      </div>
     </div>
 
+    <!--Scenarios and answers box-->
+    <div class="test">
+      <header>
+        <div class="scenario-count">
+          <h2>
+            Scenario <span id="current-scenario">0</span>/<span
+              id="total-scenarios"
+              >10</span
+            >
+          </h2>
+        </div>
+      </header>
+      <section>
+        <div class="scenario-container">
+          <h4 id="scenario">Scenario displayed here</h4>
+          <div class="answers">
+            <button class="answer-btn">Answer 1</button>
+            <button class="answer-btn">Answer 2</button>
+            <button class="answer-btn">Answer 3</button>
+            <button class="answer-btn">Answer 4</button>
+            <button class="answer-btn">Answer 5</button>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="current-score">
+          <p class="scores">Correct <span id="correct-score">0</span></p>
+          <p class="scores">Incorrect <span id="incorrect-score">0</span></p>
+        </div>
+      </footer>
+    </div>
     <!--JS link-->
     <script src="assets/js/script.js"></script>
   </body>
