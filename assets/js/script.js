@@ -262,6 +262,10 @@ function selectAnswer(e) {
   nextBtn.style.display = "block";
 }
 
+function displayFinalScore (){
+    
+}
+
 function activateNextBtn() {
   currentScenarioIndex++;
   if (currentScenarioIndex < scenarios.length) {
