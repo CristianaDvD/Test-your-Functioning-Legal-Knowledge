@@ -29,7 +29,7 @@ body {
   text-shadow: 1px 1px 2px black, 0 0 2em black, 0 0 0.2em black;
 }
 #intro-box,
-.test {
+#test {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -71,6 +71,7 @@ body {
   padding: 10px;
   transition-duration: 0.5s;
   cursor: pointer;
+  display: block;
 }
 .start-btn:hover,
 #next-btn:hover {
@@ -78,7 +79,7 @@ body {
   color: #4c1e0f;
 }
 
-.test header {
+#test header {
   font-family: "Domine", serif;
   display: flex;
   justify-content: space-between;
@@ -87,7 +88,7 @@ body {
   padding-bottom: 10px;
   border-bottom: 2px solid #4c1e0f;
 }
-.test h3 {
+#test h3 {
   padding-top: 50px;
 }
 .scenario-container {
@@ -107,24 +108,36 @@ body {
   transition-duration: 0.5s;
   cursor: pointer;
 }
-.answer-btn:hover {
+/*Credits to GreatStack for disabled button styles*/
+.answer-btn:hover:not([disabled]) {
   background-color: #4c1e0f;
   color: #e9dfd0;
+}
+.answer-btn:disabled {
+  cursor: no-drop;
 }
 #scenario {
   font-family: "Source Sans 3", sans-serif;
   text-align: left;
 }
 
-.test footer {
+#test footer,
+#buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: center;}
+
 .current-score {
   background: #e9dfd0;
   border: 2px solid #4c1e0f;
   margin: 10px;
   padding: 10px;
   width: max-content;
+}
+
+.correct {
+  background: rgb(130, 228, 130);
+}
+.incorrect {
+  background: rgb(238, 100, 100);
 }
