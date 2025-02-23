@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 
+/* Reset default styling */
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +19,7 @@ body {
   text-align: center;
 }
 
+/* Page title styling */
 #heading {
   margin-top: 20px;
   margin-bottom: 30px;
@@ -28,6 +30,12 @@ body {
   /*code inspiration from https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow*/
   text-shadow: 1px 1px 2px black, 0 0 2em black, 0 0 0.2em black;
 }
+
+.hide {
+  display: none;
+}
+
+/* Styling to all boxes */
 #intro-box,
 #test,
 #final-score-box {
@@ -42,6 +50,18 @@ body {
   transform: translate(-50%, -50%);
   background-color: #e9dfd0;
 }
+
+/* Credits to Ali Aslan for code to control boxes appearance in JS */
+#intro-box.activeIntro,
+#test.activeTest,
+#final-score-box.activeFinalScore {
+  opacity: 1;
+  z-index: 5;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Intro box styling */
 .intro-title,
 .score-title {
   font-family: "Domine", serif;
@@ -59,9 +79,10 @@ body {
   color: #4c1e0f;
 }
 
+/* Buttons styling */
 .start-btn,
 #next-btn,
-#play-again,
+#start-again,
 #home-page {
   font-family: "Domine", serif;
   background-color: #4c1e0f;
@@ -77,14 +98,17 @@ body {
   cursor: pointer;
   display: block;
 }
+
+/* Styling for hovering over buttons */
 .start-btn:hover,
 #next-btn:hover,
-#play-again:hover,
+#start-again:hover,
 #home-page:hover {
   background-color: #e9dfd0;
   color: #4c1e0f;
 }
 
+/* Test box styling */
 #test header {
   font-family: "Domine", serif;
   display: flex;
@@ -135,6 +159,7 @@ body {
   justify-content: center;
 }
 
+/* Final score box styling */
 .score-img img {
   width: 30%;
   height: 30%;
@@ -153,6 +178,7 @@ body {
   width: max-content;
 }
 
+/* Styling for correct and incorrect answers */
 .correct {
   background: rgb(130, 228, 130);
 }
