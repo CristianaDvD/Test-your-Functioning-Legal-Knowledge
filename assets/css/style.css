@@ -29,7 +29,8 @@ body {
   text-shadow: 1px 1px 2px black, 0 0 2em black, 0 0 0.2em black;
 }
 #intro-box,
-#test {
+#test,
+#final-score-box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -41,7 +42,8 @@ body {
   transform: translate(-50%, -50%);
   background-color: #e9dfd0;
 }
-.intro-title {
+.intro-title,
+.score-title {
   font-family: "Domine", serif;
   margin: 5px;
   color: #4c1e0f;
@@ -58,7 +60,9 @@ body {
 }
 
 .start-btn,
-#next-btn {
+#next-btn,
+#play-again,
+#home-page {
   font-family: "Domine", serif;
   background-color: #4c1e0f;
   border: #4c1e0f 1px solid;
@@ -74,7 +78,9 @@ body {
   display: block;
 }
 .start-btn:hover,
-#next-btn:hover {
+#next-btn:hover,
+#play-again:hover,
+#home-page:hover {
   background-color: #e9dfd0;
   color: #4c1e0f;
 }
@@ -122,10 +128,22 @@ body {
 }
 
 #test footer,
-#buttons {
+#buttons,
+.buttons {
   display: flex;
   align-items: center;
-  justify-content: center;}
+  justify-content: center;
+}
+
+.score-img img {
+  width: 30%;
+  height: 30%;
+}
+
+.final-score {
+  color: #4c1e0f;
+  font-family: "Source Sans 3", sans-serif;
+}
 
 .current-score {
   background: #e9dfd0;
