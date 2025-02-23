@@ -318,6 +318,7 @@ restartBtn.onclick = () => {
 }
 
 homePageBtn.onclick = () => {
+  mainTitle.classList.remove("hide");
   finalScoreBox.classList.remove("activeFinalScore");
   testBox.classList.remove("activeTest");
   introBox.classList.add("activeIntro");

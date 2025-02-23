@@ -36,19 +36,34 @@ body {
 }
 
 /* Styling to all boxes */
-#intro-box,
-#test,
-#final-score-box {
+#intro-box{
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: 20px;
+  margin-top: 90px;
   padding: 10px;
   border: 2px solid #4c1e0f;
   border-radius: 6px;
   /*code inspiration from https://developer.mozilla.org/en-US/docs/Web/CSS/translate*/
   transform: translate(-50%, -50%);
   background-color: #e9dfd0;
+}
+
+
+#test,
+#final-score-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 90px;
+  padding: 10px;
+  border: 2px solid #4c1e0f;
+  border-radius: 6px;
+  /*code inspiration from https://developer.mozilla.org/en-US/docs/Web/CSS/translate*/
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease;
+  background-color: #e9dfd0;
+  opacity: 0;
 }
 
 /* Credits to Ali Aslan for code to control boxes appearance in JS */
@@ -168,6 +183,8 @@ body {
 .final-score {
   color: #4c1e0f;
   font-family: "Source Sans 3", sans-serif;
+  font-size: large;
+  margin: 10px;
 }
 
 .current-score {
