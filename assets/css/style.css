@@ -207,7 +207,6 @@ body {
   background: rgb(238, 100, 100);
 }
 
-
 /* Media queries */
 @media screen and (min-width: 320px) {
   /* Main title */
@@ -228,16 +227,15 @@ body {
     margin-bottom: 10px;
   }
   .description {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 }
 
 @media screen and (min-width: 375px) {
-
   /* intro box */
   #intro-box {
-     left: 50%;
-     top: 50%;
+    left: 50%;
+    top: 50%;
   }
 }
 

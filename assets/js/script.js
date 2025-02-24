@@ -1,4 +1,3 @@
-
 // DOM elements
 const scenarioEl = document.getElementById("scenario");
 const answersEl = document.getElementById("answers");
