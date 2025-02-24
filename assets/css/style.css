@@ -90,11 +90,9 @@ body {
   color: #4c1e0f;
 }
 
-/* error message */
-#error-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* error box styling */
+#error-box a {
+  display: inline-block;
 }
 .error-text {
   font-family: "Source Sans 3", sans-serif;
@@ -140,8 +138,7 @@ body {
 #start-btn:hover,
 #next-btn:hover,
 #start-again:hover,
-#home-page:hover,
-.return.btn:hover {
+#home-page:hover {
   background-color: #e9dfd0;
   color: #4c1e0f;
 }
