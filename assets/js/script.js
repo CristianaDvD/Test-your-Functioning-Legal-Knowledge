@@ -6,14 +6,16 @@ const introBox = document.getElementById("intro-box");
 const testBox = document.getElementById("test");
 const finalScoreBox = document.getElementById("final-score-box");
 const mainTitle = document.getElementById("heading");
-const startBtn = document.querySelector(".start-btn");
+const startBtn = document.getElementById("start-btn");
 const restartBtn = document.getElementById("start-again");
 const homePageBtn = document.getElementById("home-page");
 
+// variables for test
 let currentScenarioIndex = 0;
 let correctScore = 0;
 let incorrectScore = 0;
 
+// Array for my scenarios with answers and correct and false options.
 const scenarios = [
   {
     scenario:
@@ -204,14 +206,16 @@ const scenarios = [
   },
 ];
 
+// event handler for start btn
 startBtn.onclick = () => {
   mainTitle.classList.add("hide");
   introBox.classList.add("hide");
-  testBox.classList.add("activeTest");
-  starTest();
+  testBox.classList.remove("hide");
+  startTest();
 };
 
-function starTest() {
+// function for start test
+function startTest() {
   currentScenarioIndex = 0;
   correctScore = 0;
   incorrectScore = 0;
@@ -219,6 +223,7 @@ function starTest() {
   showScenario();
 }
 
+//function to show scenarios and answer buttons
 function showScenario() {
   resetState();
 
@@ -247,6 +252,10 @@ function resetState() {
   }
 }
 
+/**
+ * This function is to show when selected if answer is correct or no,
+ *  and to update score until test is finished.
+ */
 function selectAnswer(e) {
   const selectedBtn = e.target;
   const isCorrect = selectedBtn.dataset.correct === "true";
@@ -269,10 +278,10 @@ function selectAnswer(e) {
   nextBtn.style.display = "block";
 }
 
+//function to display final score box
 function displayFinalScore() {
-  introBox.classList.remove("activeIntro");
-  testBox.classList.remove("activeTest");
-  finalScoreBox.classList.add("activeFinalScore");
+  finalScoreBox.classList.remove("hide");
+  testBox.classList.add("hide");
 
   let finalScoreEl = finalScoreBox.querySelector(".final-score");
   let finalMessage;
@@ -283,7 +292,7 @@ function displayFinalScore() {
       correctScore +
       ` out of ` +
       scenarios.length +
-      `</div><div>You can restart anytime and improve your knowledge!</div></span>`;
+      `</div><div>You can restart anytime and improve your answers!</div></span>`;
   } else if (correctScore >= 6 && correctScore < 8) {
     finalMessage =
       `<span>You got<div>` +
@@ -311,27 +320,28 @@ function activateNextBtn() {
   }
 }
 
+// event handler for next btn
 nextBtn.addEventListener("click", () => {
   if (currentScenarioIndex < scenarios.length) {
     activateNextBtn();
   }
 });
 
+// event handler for Start again btn
 restartBtn.onclick = () => {
-  finalScoreBox.classList.remove("activeFinalScore");
-  testBox.classList.add("activeTest");
+  finalScoreBox.classList.add("hide");
+  testBox.classList.remove("hide");
   currentScenarioIndex = 0;
   correctScore = 0;
   incorrectScore = 0;
   showScenario();
 };
 
+// Event handler for home page btn
 homePageBtn.onclick = () => {
   mainTitle.classList.remove("hide");
   introBox.classList.remove("hide");
-  finalScoreBox.classList.remove("activeFinalScore");
-  testBox.classList.remove("activeTest");
-  introBox.classList.add("activeIntro");
+  finalScoreBox.classList.add("hide");
 };
 
-starTest();
+startTest();

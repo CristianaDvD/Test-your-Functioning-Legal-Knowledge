@@ -31,8 +31,7 @@ body {
   text-shadow: 1px 1px 2px black, 0 0 2em black, 0 0 0.2em black;
 }
 
-#heading.hide,
-#intro-box.hide {
+.hide {
   display: none;
 }
 
@@ -54,10 +53,13 @@ body {
 }
 
 #test,
-#final-score-box {
+#final-score-box,
+#error-box {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 95%;
+  max-width: 800px;
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
@@ -67,22 +69,12 @@ body {
   transform: translate(-50%, -50%);
   transition: all 0.4s ease;
   background-color: #e9dfd0;
-  opacity: 0;
-}
-
-/* Credits to Ali Aslan for code to control boxes appearance in JS */
-#intro-box.activeIntro,
-#test.activeTest,
-#final-score-box.activeFinalScore {
-  opacity: 1;
-  z-index: 5;
-  pointer-events: auto;
-  transform: translate(-50%, -50%) scale(1);
 }
 
 /* Intro box styling */
 .intro-title,
-.score-title {
+.score-title,
+.error-title {
   font-family: "Domine", serif;
   margin: 5px;
   color: #4c1e0f;
@@ -98,11 +90,19 @@ body {
   color: #4c1e0f;
 }
 
+/* error message */
+.error-text {
+  font-family: "Source Sans 3", sans-serif;
+  color: #4c1e0f;
+  font-size: medium;
+}
+
 /* Buttons styling */
-.start-btn,
+#start-btn,
 #next-btn,
 #start-again,
-#home-page {
+#home-page,
+.return-btn {
   font-family: "Domine", serif;
   background-color: #4c1e0f;
   border: #4c1e0f 1px solid;
@@ -119,7 +119,7 @@ body {
 }
 
 /* Styling for hovering over buttons */
-.start-btn:hover,
+#start-btn:hover,
 #next-btn:hover,
 #start-again:hover,
 #home-page:hover {
@@ -223,7 +223,6 @@ body {
   #intro-box {
     width: 95%;
     top: 57%;
-    left: 54%;
     margin-bottom: 10px;
   }
   .description {
