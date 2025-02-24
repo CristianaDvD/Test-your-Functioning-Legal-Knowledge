@@ -1,5 +1,5 @@
 
-
+// DOM elements
 const scenarioEl = document.getElementById("scenario");
 const answersEl = document.getElementById("answers");
 const nextBtn = document.getElementById("next-btn");
@@ -14,8 +14,6 @@ const homePageBtn = document.getElementById("home-page");
 let currentScenarioIndex = 0;
 let correctScore = 0;
 let incorrectScore = 0;
-
-
 
 const scenarios = [
   {
@@ -209,12 +207,10 @@ const scenarios = [
 
 startBtn.onclick = () => {
   mainTitle.classList.add("hide");
-  introBox.classList.remove("activeIntro");
+  introBox.classList.add("hide");
   testBox.classList.add("activeTest");
-  starTest()
-}
-
-
+  starTest();
+};
 
 function starTest() {
   currentScenarioIndex = 0;
@@ -274,23 +270,37 @@ function selectAnswer(e) {
   nextBtn.style.display = "block";
 }
 
-function displayFinalScore (){
-   introBox.classList.remove("activeIntro");
-   testBox.classList.remove("activeTest");
-   finalScoreBox.classList.add("activeFinalScore");
-    
-   let finalScoreEl = finalScoreBox.querySelector(".final-score");
-   let finalMessage;
+function displayFinalScore() {
+  introBox.classList.remove("activeIntro");
+  testBox.classList.remove("activeTest");
+  finalScoreBox.classList.add("activeFinalScore");
 
-   if (correctScore <= 5) {
-    finalMessage = `<span>You got<div>` + correctScore + ` out of ` + scenarios.length + `</div><div>You can restart anytime and improve your knowledge!</div></span>`;
-   } else if (correctScore >=6 && correctScore < 8) {
-    finalMessage = `<span>You got<div>` + correctScore + ` out of ` + scenarios.length + `</div><div>Great! You are getting close to become a professional!</div></span>`;
-   } else if (correctScore >= 8 && correctScore <=10) {
-    finalMessage = `<span>You got<div>` + correctScore + ` out of ` + scenarios.length + `</div><div>Amaizing! You are a master of Functioning Legal Knowledge!</div></span>`;
-   }
-   finalScoreEl.innerHTML = finalMessage;
+  let finalScoreEl = finalScoreBox.querySelector(".final-score");
+  let finalMessage;
 
+  if (correctScore <= 5) {
+    finalMessage =
+      `<span>You got<div>` +
+      correctScore +
+      ` out of ` +
+      scenarios.length +
+      `</div><div>You can restart anytime and improve your knowledge!</div></span>`;
+  } else if (correctScore >= 6 && correctScore < 8) {
+    finalMessage =
+      `<span>You got<div>` +
+      correctScore +
+      ` out of ` +
+      scenarios.length +
+      `</div><div>Great! You are getting close to become a professional!</div></span>`;
+  } else if (correctScore >= 8 && correctScore <= 10) {
+    finalMessage =
+      `<span>You got<div>` +
+      correctScore +
+      ` out of ` +
+      scenarios.length +
+      `</div><div>Amaizing! You are a master of Functioning Legal Knowledge!</div></span>`;
+  }
+  finalScoreEl.innerHTML = finalMessage;
 }
 
 function activateNextBtn() {
@@ -305,7 +315,7 @@ function activateNextBtn() {
 nextBtn.addEventListener("click", () => {
   if (currentScenarioIndex < scenarios.length) {
     activateNextBtn();
-  } 
+  }
 });
 
 restartBtn.onclick = () => {
@@ -315,13 +325,14 @@ restartBtn.onclick = () => {
   correctScore = 0;
   incorrectScore = 0;
   showScenario();
-}
+};
 
 homePageBtn.onclick = () => {
   mainTitle.classList.remove("hide");
+  introBox.classList.remove("hide");
   finalScoreBox.classList.remove("activeFinalScore");
   testBox.classList.remove("activeTest");
   introBox.classList.add("activeIntro");
-}
+};
 
 starTest();

@@ -31,13 +31,16 @@ body {
   text-shadow: 1px 1px 2px black, 0 0 2em black, 0 0 0.2em black;
 }
 
-.hide {
+#heading.hide,
+#intro-box.hide {
   display: none;
 }
 
 /* Styling to all boxes */
-#intro-box{
+#intro-box {
   position: absolute;
+  width: 70%;
+  max-width: 768px;
   top: 50%;
   left: 50%;
   margin-top: 90px;
@@ -47,15 +50,16 @@ body {
   /*code inspiration from https://developer.mozilla.org/en-US/docs/Web/CSS/translate*/
   transform: translate(-50%, -50%);
   background-color: #e9dfd0;
+  transition: all 0.4s ease;
 }
-
 
 #test,
 #final-score-box {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: 90px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 10px;
   border: 2px solid #4c1e0f;
   border-radius: 6px;
@@ -201,4 +205,57 @@ body {
 }
 .incorrect {
   background: rgb(238, 100, 100);
+}
+
+
+/* Media queries */
+@media screen and (min-width: 320px) {
+  /* Main title */
+  #heading {
+    font-size: 12px;
+  }
+  #heading img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Intro box */
+
+  #intro-box {
+    width: 95%;
+    top: 57%;
+    left: 54%;
+    margin-bottom: 10px;
+  }
+  .description {
+      font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 375px) {
+
+  /* intro box */
+  #intro-box {
+     left: 50%;
+     top: 50%;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  /* Main title */
+  #heading img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Main title */
+  #heading {
+    font-size: 16px;
+  }
+  #heading img {
+    width: 192px;
+    height: 192px;
+  }
 }
