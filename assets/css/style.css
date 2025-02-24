@@ -91,6 +91,11 @@ body {
 }
 
 /* error message */
+#error-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .error-text {
   font-family: "Source Sans 3", sans-serif;
   color: #4c1e0f;
