@@ -106,11 +106,9 @@ body {
   color: #e9dfd0;
   margin: 10px;
   text-align: center;
-  font-size: larger;
   border-radius: 8px;
-  width: 150px;
+  width: max-content;
   padding: 10px;
-  transition-duration: 0.5s;
   cursor: pointer;
 }
 
