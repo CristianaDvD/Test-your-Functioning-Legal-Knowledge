@@ -202,3 +202,13 @@ I went through each box using google chrome developer tools to ensure that they 
 All buttons work correctly and lead to the correct path as per JS code.
 
 
+## Credits
+
+- Scenarios and answers link source [here](https://sqe.sra.org.uk/docs/default-source/pdfs/sqe1-flk1-sample-questions-updated-feb-2024.pdf?sfvrsn=5117ba1b_5)
+- Inspiration links on how to create a quiz type test:
+  1. Credits to [sitepoint](https://www.sitepoint.com/simple-javascript-quiz/)
+  2. Credits to [GreatStack](https://www.youtube.com/watch?v=PBcqGxrr9g8)
+- Code to create a bordered written title found [here](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow)
+- Background image found [here](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.proprofs.com%2Fquiz-school%2Fstory.php%3Ftitle%3Dlrw-legal-analysis-introduction&psig=AOvVaw2QvljPJtmlezEBsJSIlqer&ust=1740164176885000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoT)
+- [Logo image](https://www.google.com/url?sa=i&url=https%3A%2F%2Feduadvisor.my%2Fquiz%2Flaw-career-quiz&psig=AOvVaw1oJ7HFo11a1yN7axS5kMB2&ust=1740591110228000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOCMt6yt34sDFQAAAAAdAAAAABAE)
+- [Final score box image](https://www.freepik.es/psd-premium/tabla-leyes-aislada-sobre-fondo-transparente_292134894.htm)
