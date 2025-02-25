@@ -97,7 +97,10 @@ The main title and Logo are only visible before starting the test. Logo chosen i
 
 - The test box is comprised of a heading showing the current scenario number on the left-hand side, and on the right-hand side the number of correct and incorrect answers live. 
 - The section is comprised of scenario text and questions to be answered, and five buttons with possible answers. 
-- The correct and incorrect answers are background coloured accordingly, correct one becoming green, and incorrect one becoming red. (didn't include a screenshot to not encourage cheating).
+- The correct and incorrect answers are background coloured accordingly, correct one becoming green, and incorrect one becoming red. (didn't include a proper screenshot to not encourage cheating).
+
+![Correct and incorrect answers colour dysplay](assets/images/correct-incorrect.png)
+
 - After an answer is clicked the Next button appears to continue the test.
 
 ### Final Score box 
