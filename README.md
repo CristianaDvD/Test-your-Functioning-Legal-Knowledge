@@ -117,3 +117,31 @@ To create a better interaction for the users, a personalised 404 Error page was 
 - More scenarios to be introduced.
 - More than one options of correct answers.
 - A feature to request users details in order to keep their score recorded.
+
+## Accessibility 
+
+I made sure the website was as accessible as possible during the development phase. I have done this by:
+ - Assuring a good colour contrast throught the test.
+ - Using descriptive alt attributes on images used.
+
+--- 
+
+## Languages Used
+
+This development was created with HTML, CSS and JavaScript.
+
+### Frameworks, Libraries & Programs Used
+
+VS Code - For version control.
+
+Github - To save and store the files.
+
+Google Fonts - To import the fonts used on the website.
+
+Font Awesome - For the iconography on the website.
+
+Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
+
+[Favicon.io](https://favicon.io/) To create favicon.
+
+[Am I Responsive?](http://ami.responsivedesign.is/) To show the test image on a range of devices.
