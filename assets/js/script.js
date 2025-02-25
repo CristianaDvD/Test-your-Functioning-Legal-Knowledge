@@ -214,11 +214,17 @@ startBtn.onclick = () => {
   startTest();
 };
 
-// function for start test
-function startTest() {
+// function to reset score when tests restarts
+function resetScore(){
   currentScenarioIndex = 0;
   correctScore = 0;
   incorrectScore = 0;
+  document.getElementById("correct-score").textContent = correctScore;
+  document.getElementById("incorrect-score").textContent = incorrectScore;
+}
+// function for start test
+function startTest() {
+  resetScore();
   startBtn.innerHTML = "Start";
   showScenario();
 }
@@ -334,7 +340,7 @@ restartBtn.onclick = () => {
   currentScenarioIndex = 0;
   correctScore = 0;
   incorrectScore = 0;
-  showScenario();
+  startTest();
 };
 
 // Event handler for home page btn

@@ -242,6 +242,11 @@ body {
   .description {
     font-size: 1rem;
   }
+
+  /* test box */
+  #test {
+    top: 67%;
+  }
 }
 
 @media screen and (min-width: 375px) {
@@ -258,6 +263,10 @@ body {
     width: 150px;
     height: 150px;
   }
+  /* test box */
+  #test {
+    top: 55%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -268,5 +277,9 @@ body {
   #heading img {
     width: 192px;
     height: 192px;
+  }
+  /* test box */
+  #test {
+    top: 50%;
   }
 }

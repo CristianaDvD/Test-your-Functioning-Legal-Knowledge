@@ -8,38 +8,38 @@ The Test your Functioning Legal Knowledge was created for all law enthusiasts an
 
 ## Contents 
 
-- [User Experience]
+- [User Experience](#user-experience)
  
-   -[External user's goals]
+   -[External user's goals](#external-users-goals)
 
-- [Design]
-   - [Colour scheme]
-   - [Typography]
-   - [Imagery]
+- [Design](#design)
+   - [Colour scheme](#colour-scheme)
+   - [Typography](#typography)
+   - [Imagery](#imagery)
 
-- [Features]
-   - [Main title and Logo]
-   - [Intro box]
-   - [Test box]
-   - [Final score box]
-   - [404 Error page]   
-   - [Features to be implemented]   
+- [Features](#features)
+   - [Main title and Logo](#main-title-and-logo)
+   - [Intro box](#intro-box)
+   - [Test box](#test-box)
+   - [Final score box](#final-score-box)
+   - [404 Error page](#404-error-page)   
+   - [Features to be implemented](#features-to-be-implemented)   
 
-- [Accessibility]   
+- [Accessibility](#accessibility)   
 
-- [Languages used]
-   - [Frameworks, Libraries & Programs Used]
+- [Languages used](#languages-used)
+   - [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 
-- [Deployment & Local Development]
+- [Deployment](#deployment)
 
-- [Testing] 
-   - [Solved bugs]
-   - [W3C Validator for HTML and CSS]
-   - [JSHint for JavaScript]   
-   - [Lighthouse]
-   - [Full testing]
+- [Testing](#testing) 
+   - [Solved bugs](#solved-bugs)
+   - [W3C Validator for HTML and CSS](#w3c-validator-for-html-and-css)
+   - [JSHint for JavaScript](#jshint-for-javascript)   
+   - [Lighthouse](#lighthouse)
+   - [Full testing](#full-testing)
 
-- [Credits]   
+- [Credits](#credits)   
 
 
 --- 
@@ -97,7 +97,7 @@ The main title and Logo are only visible before starting the test. Logo chosen i
 
 - The test box is comprised of a heading showing the current scenario number on the left-hand side, and on the right-hand side the number of correct and incorrect answers live. 
 - The section is comprised of scenario text and questions to be answered, and five buttons with possible answers. 
-- The correct and incorrect answers are background coloured accordingly (didn't include a screenshot to not encourage cheating).
+- The correct and incorrect answers are background coloured accordingly, correct one becoming green, and incorrect one becoming red. (didn't include a screenshot to not encourage cheating).
 - After an answer is clicked the Next button appears to continue the test.
 
 ### Final Score box 
@@ -165,9 +165,11 @@ Every step of the development process was subject to ongoing testing.  Throughou
 
 ### Solved bugs
  
-  - Start button would not work as per js function. Changed class name into id and changed js variable and worked.
+  - Start button would not work as per js function. Noticed this just before my second mentor meating. Changed class name into id and changed js variable and worked.
   - Boxes would not show and hide accordingly. I was not using the class hide correctly. Issue fixed.
-  - The a attribute with button role on 404 page would not centre. Used Dev tools to find best option to centre it. Fixed it.
+  - The a attribute with button role on 404 page would not centre. Used Dev tools to find best option to centre it. Assigned display block-inline and fixed the issue.
+  - The score would not update after restarting the test. Noticed this in the last mentor meeting. I have tried to find out where the issue is coming from by doing a few of console.log. In the end I have added a new function to reset score every time the startTest function was called. Issue fixed.
+  - When going thru the scenarios, on the larger content ones, on small screens, the top of the box was not completely visible. Adjusted top position in media queries and fixed the issue.
 
 ### W3C Validator for HTML and CSS  
 
