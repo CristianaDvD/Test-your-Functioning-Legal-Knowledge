@@ -253,7 +253,7 @@ function resetState() {
 }
 
 /**
- * This function is to show when selected if answer is correct or no,
+ * This function is to show when selected, if answer is correct or no,
  *  and to update score until test is finished.
  */
 function selectAnswer(e) {
