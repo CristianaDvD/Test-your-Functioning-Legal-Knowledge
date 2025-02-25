@@ -95,9 +95,9 @@ The main title and Logo are only visible before starting the test. Logo chosen i
 
 ![Test box of Test your Functioning Legal Knowledge](assets/images/test-screen.png)
 
-- The test box is comprised of a heading showing current scenario number on the left hand-side, and on the right hand-side the number of correct and incorrect answers live. 
-- The section is comprised of scenario text and question to be answered, and five buttons with possible answers. 
-- The correct and incorrect answers are background coloured accordingly (didn't include a screenshot to don't encourage to cheat).
+- The test box is comprised of a heading showing the current scenario number on the left-hand side, and on the right-hand side the number of correct and incorrect answers live. 
+- The section is comprised of scenario text and questions to be answered, and five buttons with possible answers. 
+- The correct and incorrect answers are background coloured accordingly (didn't include a screenshot to not encourage cheating).
 - After an answer is clicked the Next button appears to continue the test.
 
 ### Final Score box 
@@ -145,3 +145,60 @@ Google Dev Tools - To troubleshoot and test features, solve issues with responsi
 [Favicon.io](https://favicon.io/) To create favicon.
 
 [Am I Responsive?](http://ami.responsivedesign.is/) To show the test image on a range of devices.
+
+--- 
+
+## Deployment
+
+Github Pages was used to deploy the live site. The instructions to achieve this are below:
+
+1. Log in (or sign up) to Github.
+2. Find the repository for this project, Test your Functioning Legal Knowledge.
+3. Click on the Settings link.
+4. Click on the Pages link in the left hand side navigation bar.
+5. In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
+6. Click Save. Your live Github Pages site is now deployed at the URL shown.
+
+## Testing 
+
+Every step of the development process was subject to ongoing testing.  Throughout the development process, I used the Chrome developer tools to find and address any issues.
+
+### Solved bugs
+ 
+  - Start button would not work as per js function. Changed class name into id and changed js variable and worked.
+  - Boxes would not show and hide accordingly. I was not using the class hide correctly. Issue fixed.
+  - The a attribute with button role on 404 page would not centre. Used Dev tools to find best option to centre it. Fixed it.
+
+### W3C Validator for HTML and CSS  
+
+- The [W3C](https://validator.w3.org/nu/) validator was used to validate the HTML and CSS.
+
+![HTML code check on test site](assets/images/html-code-check.png)
+![HTML code info check](assets/images/html-info.png)
+
+- No errors shown after validating the HTML code, only info due to closing tab as used Prettier to format all the files.
+
+- Also no errors after validating the CSS code.
+
+![CSS code check](assets/images/css-code-check.png)
+
+### JSHint for JavaScript 
+
+- The [JSHint](https://jshint.com/) validator was used to check and validate the JavaScript code.
+- No errors present.
+
+![JS code check](assets/images/js-code-check.png)
+
+### Lighthouse
+
+I used Lighthouse within the Chrome Developer Tools to allow me to test the performance, accessibility and best practices of the website.
+
+![Lighthouse testing](assets/images/lighthouse-check.png)
+
+### Full testing
+
+I went through each box using google chrome developer tools to ensure that they responsive on all different screen sizes.
+
+All buttons work correctly and lead to the correct path as per JS code.
+
+
